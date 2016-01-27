@@ -1,7 +1,7 @@
 {
   "name": "openweathermap-service",
-  "description": "Service Plugin seed project for the Reekoh IoT Platform. Helps engineers to start developing service plugins for the Reekoh IoT Platform.",
-  "version": "0.1.4",
+  "description": "Open Weather Map Service Plugin for the Reekoh IoT Platform.",
+  "version": "0.1.5",
   "author": "Reekoh, Inc.",
   "main": "app.js",
   "scripts": {
