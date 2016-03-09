@@ -1,7 +1,3 @@
-/*
- * Just a sample code to test the service plugin.
- * Kindly write your own unit tests for your own plugin.
- */
 'use strict';
 
 var cp     = require('child_process'),
@@ -11,8 +7,13 @@ var cp     = require('child_process'),
 describe('Service', function () {
 	this.slow(5000);
 
-	after('terminate child process', function () {
-		service.kill('SIGKILL');
+	after('terminate child process', function (done) {
+		this.timeout(7000);
+
+		setTimeout(() => {
+			service.kill('SIGKILL');
+			done();
+		}, 5000);
 	});
 
 	describe('#spawn', function () {
@@ -46,7 +47,7 @@ describe('Service', function () {
 	});
 
 	describe('#data', function () {
-		it('should process the data and send back a result', function (done) {
+		it('should process the JSON data and send back a result', function (done) {
 			var requestId = (new Date()).getTime().toString();
 
 			service.on('message', function (message) {
