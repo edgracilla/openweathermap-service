@@ -10,7 +10,7 @@ Uses request npm library
 2. URL: http://api.openweathermap.org/data/2.5/
 3. Supports both Current and History weather request
 4. Supports City, City Id and Coordinates type of location request
-5. Missing required fields in the request will not push the request will return a JSON Object 
+5. Missing required fields in the request will not push the request will return a JSON Object
    {message: 'Missing field details', missingField: 'nameOfField'}
 
 **Expected Fields**

@@ -1,17 +1,15 @@
 {
   "name": "openweathermap-service",
-  "description": "Open Weather Map Service Plugin for the Reekoh IoT Platform.",
   "version": "1.0.0",
-  "author": "Reekoh, Inc.",
+  "description": "Open Weather Map Service Plugin for the Reekoh IoT Platform.",
   "main": "app.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Reekoh/openweathermap-service"
-  },
+  "author": "reekoh",
+  "license": "ISC",
   "dependencies": {
+    "reekoh": "^1.0.1",
     "async": "^1.5.2",
     "lodash.isarray": "^4.0.0",
     "lodash.isplainobject": "^4.0.4",
@@ -20,12 +18,13 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-cli": "^1.2.1",
-    "gulp-jshint": "^2.0.0",
+    "gulp-jshint": "^2.0.1",
     "gulp-json-lint": "^0.1.0",
     "gulp-mocha": "^2.2.0",
     "gulp-plumber": "^1.1.0",
-    "jshint": "^2.9.1",
-    "mocha": "^2.4.5"
-  },
-  "license": "LGPL-3.0"
+    "gulp-standard": "^8.0.4",
+    "jshint": "^2.9.4",
+    "mocha": "^2.5.3",
+    "should": "^9.0.2"
+  }
 }
